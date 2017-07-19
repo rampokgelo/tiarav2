@@ -3,6 +3,7 @@
     <head>
       <title><?php echo $title; ?></title>
       <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/tiara-style.css"  media="screen,projection"/>
@@ -20,10 +21,9 @@
               <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
               <ul class="right">
                 <li><a href="collapsible.html"><i class="material-icons icon-search"></i></a></li>
-                <li><a href="mobile.html"><a class="waves-effect waves-light btn btn-outline-inverse btn-flat"><i class="material-icons icon-user left"></i> member</a></li>
-                <li><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a></li>
+                <li><a class="waves-effect waves-light btn btn-outline-inverse btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>member</span></a></li>
+                <li><span class="nav-collapse"><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a></span></li>
               </ul>
-
             </div>
           </div>
         </nav>

@@ -1,5 +1,93 @@
+.abs-center{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.overlay-base{
+  background-color: rgba(0,0,0,.3);
+  @extend .abs-center;
+}
+.logogram {
+  height: 55px;
+  width: 160px;
+  display: inline-block;
+  background-image: url('../images/logo-tiara@1.5x.png');
+  background-size: 60%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin: 5px auto;
+  @include transition(all .3s);
+  @media #{$medium-and-down}{
+    height: 45px;
+    width: 140px;
+    background-size:58%;
+  }
+}
 .nav-primary{
-  
+  margin-top: 7.5px;
+  &:before{
+    content: '';
+    z-index: -1;
+    height: 70px;
+    margin-top: -8px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    @include gradient-vertical(rgba(0,0,0,.7), rgba(0,0,0,0), 0%, 100%);
+  }
+  &:after{
+    content: '';
+    z-index: -1;
+    top:0;
+    height: 70px;
+    margin-top: -8px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgba(255,255,255,0);
+    @include transition(background-color .3s ease-in);
+  }
+  .nav-collapse{
+    display: block;
+    width: 0;
+    @include transition(all .3s);
+    @media #{$medium-and-down}{
+      width: 54px;
+    }
+  }
+  &.nav-change{
+    margin-top: 0;
+    background-color: rgba(255,255,255,1);
+    .logogram{
+      background-position: 0 -55px;
+      @media #{$medium-and-down}{
+        background-position: 0 -47px;
+      }
+    }
+    &:after{
+      background-color: rgba(255,255,255,1);
+    }
+    ul{
+      li{
+        a {
+          color: $gray-base;
+        }
+        .btn-outline-inverse{
+          border-color: $gray-base;
+        }
+      }
+    }
+    .nav-collapse{
+      display: block;
+      width: 54px;
+      > .button-collapse{
+        display: block;
+      }
+    }
+  }
 }
 .nav-secondary{
   width: 100%;
@@ -20,16 +108,54 @@
       }
     }
   }
+  @media #{$medium-and-down}{
+    display: none;
+  }
 }
 .banner-hero{
   margin-top: -65px;
+  position: relative;
   background: $gray-base;
   .banner-hero-item{
     height: 600px;
+    position: relative;
     overflow: hidden;
+    @include bg-cover;
+    .caption-hero{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      color: #fff;
+      text-align: center;
+      @include translate(0,-40%);
+      h1,h2{
+        font-size: 4em;
+        font-weight: bold;
+      }
+    }
     img{
-      width: 100%;
-      opacity: .7;
+      @extend .abs-center;
+    }
+    @media #{$medium-and-down}{
+      height: 450px;
+      .caption-hero{
+        h1,h2{
+          font-size: 2.8em;
+        }
+      }
+    }
+  }
+  .nav-hero{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @media #{$medium-and-down}{
+      display: none;
+    }
+    >.btn-box{
+      float: left;
+      font-size: 2em;
     }
   }
 }

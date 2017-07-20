@@ -62,7 +62,7 @@ section{
     width: 0;
     @include transition(all .3s);
     @media #{$medium-and-down}{
-      width: 54px;
+      width: 34px;
     }
   }
   &.nav-change{
@@ -90,6 +90,9 @@ section{
     .nav-collapse{
       display: block;
       width: 54px;
+      @media #{$medium-and-down}{
+        width: 34px;
+      }
       > .button-collapse{
         display: block;
       }

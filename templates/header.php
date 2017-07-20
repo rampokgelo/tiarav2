@@ -39,18 +39,36 @@
               <a href="#">About Us</a>
             </li>
             <li>
-              <!-- Dropdown Trigger -->
-              <a class='dropdown-button' href='#' data-activates='dropdown1'>Drop Me!</a>
-
-              <!-- Dropdown Structure -->
+              <a class='dropdown-button' href='#' data-activates='dropdown1'>Reliability Services</a>
               <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!">Operating Deflection Shape (ODS) for Machinery Troubleshooting</a></li>
+                <li><a href="#!">Advanced Application of CSI 2130/2140 &amp; AMS Suite Software</a></li>
               </ul>
+            </li>
+            <li>
+              <a class='dropdown-button' href='#' data-activates='dropdown2'>Reliability  Technology</a>
+              <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">Reliability Technology for Turbine</a></li>
+                <li><a href="#!">three</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-button' href='#' data-activates='dropdown2'>Reliability Competency</a>
+              <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Experiences</a>
+            </li>
+            <li>
+              <a href="#">Truc</a>
+            </li>
+            <li>
+              <a href="#">News &amp; Event</a>
             </li>
           </ul>
         </div>

@@ -61,6 +61,7 @@
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="js/sticky.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/holder.min.js"></script>"
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 

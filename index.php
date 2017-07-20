@@ -28,59 +28,94 @@ include 'templates/header.php';
      </div>
    </div>
    <div class="nav-hero">
-     <button type="button" class="prev-hero btn-box btn-default"><i class="icon-arrow-prev"></i></button>
-     <button type="button" class="next-hero btn-box btn-default"><i class="icon-arrow-next"></i></button>
+     <button type="button" class="waves-effect waves-light prev-hero btn-box btn-default"><i class="icon-arrow-prev"></i></button>
+     <button type="button" class="waves-effect waves-light next-hero btn-box btn-default"><i class="icon-arrow-next"></i></button>
    </div>
  </div>
- <div class="container">
-   <div class="row">
-     <div class="col s12 m6 l4">
-       <div class="card">
-         <div class="card-image">
-           <img class="responsive-img" src="images/sample-asset.jpg">
-           <span class="card-title">Card Title</span>
-         </div>
-         <div class="card-content">
-           <p>I am a very simple card. I am good at containing small bits of information.
-           I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link <i class="icon-arrow-next"></i></a>
-         </div>
-       </div>
-     </div>
-     <div class="col s12 m6 l4">
-       <div class="card">
-         <div class="card-image">
-           <img class="responsive-img" src="images/sample-asset.jpg">
-           <span class="card-title">Card Title</span>
-         </div>
-         <div class="card-content">
-           <p>I am a very simple card. I am good at containing small bits of information.
-           I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-         </div>
-       </div>
-     </div>
-     <div class="col s12 m6 l4">
-       <div class="card">
-         <div class="card-image">
-           <img class="responsive-img" src="images/sample-asset.jpg">
-           <span class="card-title">Card Title</span>
-         </div>
-         <div class="card-content">
-           <p>I am a very simple card. I am good at containing small bits of information.
-           I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-         </div>
+ <section>
+   <div class="container">
+     <h2 class="title"><span></span>About Us</h2>
+     <div class="container-detail">
+       <div class="text-center">
+         <p class="article-text">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <a href="#" class="waves-effect waves-light btn-large btn-outline-primary btn-flat">Read More</a>
        </div>
      </div>
    </div>
- </div>
+ </section>
+ <section class="grey lighten-4">
+   <div class="container">
+     <h2 class="title"><span></span>What We Offer</h2>
+     <div class="row">
+       <div class="col s12 m6 l4">
+         <div class="card medium">
+           <div class="card-image">
+             <img class="responsive-img" src="images/sample-asset-card.jpg">
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Operating Deflection Shape (ODS) for Machinery Troubleshooting</h3>
+           </div>
+           <div class="card-action">
+             <a href="#">More <i class="icon-chevron-next"></i></a>
+           </div>
+         </div>
+       </div>
+       <div class="col s12 m6 l4">
+         <div class="card medium">
+           <div class="card-image">
+             <img class="responsive-img" src="images/sample-asset-card.jpg">
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Card Title</h3>
+           </div>
+           <div class="card-action">
+             <a href="#">More <i class="icon-chevron-next"></i></a>
+           </div>
+         </div>
+       </div><div class="col s12 m6 l4">
+         <div class="card medium">
+           <div class="card-image">
+             <img class="responsive-img" src="images/sample-asset-card.jpg">
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Reliability Technology for Turbine</h3>
+           </div>
+           <div class="card-action">
+             <a href="#">More <i class="icon-chevron-next"></i></a>
+           </div>
+         </div>
+       </div>
+       <div class="col s12 m6 l4">
+         <div class="card medium">
+           <div class="card-image">
+             <img class="responsive-img" src="images/sample-asset-card.jpg">
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Card Title</h3>
+           </div>
+           <div class="card-action">
+             <a href="#">More <i class="icon-chevron-next"></i></a>
+           </div>
+         </div>
+       </div><div class="col s12 m6 l4">
+         <div class="card medium">
+           <div class="card-image">
+             <img class="responsive-img" src="images/sample-asset-card.jpg">
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Card Title</h3>
+           </div>
+           <div class="card-action">
+             <a href="#">More <i class="icon-chevron-next"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
 
  <?php
 include 'templates/footer.php';

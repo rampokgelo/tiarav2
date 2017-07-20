@@ -1,3 +1,11 @@
+section{
+  padding-top: $gutter-width * 2;
+  padding-bottom: $gutter-width * 2;
+  @media #{$medium-and-down}{
+    padding-top: $gutter-width;
+    padding-bottom: $gutter-width;
+  }
+}
 .abs-center{
   position: absolute;
   top: 0;
@@ -18,12 +26,11 @@
   background-size: 60%;
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin: 5px auto;
   @include transition(all .3s);
   @media #{$medium-and-down}{
-    height: 45px;
+    height: 50px;
     width: 140px;
-    background-size:58%;
+    background-size:60%;
   }
 }
 .nav-primary{
@@ -158,4 +165,22 @@
       font-size: 2em;
     }
   }
+}
+.title{
+  text-align: center;
+  font-size: 2.3em;
+  position: relative;
+  > span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: $secondary-color;
+    margin-right: 10px;
+    margin-left: -20px;
+    vertical-align: top;
+  }
+}
+.article-text{
+  font-size: 18px;
+  line-height: 32px;
 }

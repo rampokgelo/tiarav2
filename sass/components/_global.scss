@@ -340,7 +340,7 @@ ul.staggered-list li {
 
 // Footer
 .page-footer {
-  padding-top: 20px;
+  padding-top: $gutter-width + 1;
   color: $footer-font-color;
   background-color: $footer-bg-color;
 

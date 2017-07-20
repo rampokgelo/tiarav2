@@ -3,9 +3,18 @@
   max-width: 1280px;
   width: 90%;
 }
+.container-detail {
+  margin: 0 auto;
+  width: 70%;
+}
 @media #{$medium-and-up} {
   .container {
     width: 85%;
+  }
+}
+@media #{$medium-and-down} {
+  .container-detail {
+    width: 100%;
   }
 }
 // @media #{$large-and-up} {

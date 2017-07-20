@@ -4,7 +4,7 @@
   transition: box-shadow .25s;
   padding: $card-padding;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  border-radius: 2px;
+  border-radius: 0;
   @extend .z-depth-1;
   background-color: $card-bg-color;
 }
@@ -15,7 +15,8 @@
   background-color: $card-bg-color;
   transition: box-shadow .25s;
   border-radius: 2px;
-  @extend .z-depth-1;
+  border: solid 1px $gray-lighter;
+  // @extend .z-depth-1;
 
 
   .card-title {
@@ -80,7 +81,7 @@
     .card-image {
       max-width: 50%;
       img {
-        border-radius: 2px 0 0 2px;
+        // border-radius: 2px 0 0 2px;
         max-width: 100%;
         width: auto;
       }
@@ -119,7 +120,7 @@
     // Image background for content
     img {
       display: block;
-      border-radius: 2px 2px 0 0;
+      // border-radius: 2px 2px 0 0;
       position: relative;
       left: 0;
       right: 0;
@@ -140,7 +141,7 @@
 
   .card-content {
     padding: $card-padding;
-    border-radius: 0 0 2px 2px;
+    // border-radius: 0 0 2px 2px;
 
     p {
       margin: 0;
@@ -155,25 +156,39 @@
         line-height: 32px;
       }
     }
+    h3{
+      &.card-title{
+        margin-top: 0;
+        @media #{$medium-and-down}{
+          font-size:18px;
+          line-height: 28px;
+        }
+      }
+    }
   }
 
   .card-action {
-    &:last-child {
-      border-radius: 0 0 2px 2px;
-    }
+    // &:last-child {
+    //   border-radius: 0 0 2px 2px;
+    // }
+    text-align: right;
     position: relative;
     background-color: inherit;
-    border-top: 1px solid rgba(160,160,160,.2);
-    padding: 16px $card-padding;
+    // border-top: 1px solid rgba(160,160,160,.2);
+    // padding: 16px $card-padding;
 
     a:not(.btn):not(.btn-large):not(.btn-floating) {
       color: $card-link-color;
-      margin-right: $card-padding;
+      display: inline-block;
+      // margin-right: $card-padding;
+      padding: 16px ($card-padding + 10);
       transition: color .3s ease;
       text-transform: uppercase;
+      background-color: $gray-base;
 
       &:hover { color: $card-link-color-light; }
     }
+
   }
 
   .card-reveal {

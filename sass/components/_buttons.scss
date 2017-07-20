@@ -268,7 +268,7 @@ button.btn-floating {
   height: $button-large-height;
   line-height: $button-large-height;
   border-radius: 2em;
-
+  padding: $button-padding-large;
   i {
     font-size: $button-large-icon-font-size;
   }

@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   $(window).on("scroll",function(){
   	var wn = $(window).scrollTop();
-    if(wn > 100){
+    if(wn > 80){
     	$(".nav-primary").addClass('nav-change');
     }
     else{

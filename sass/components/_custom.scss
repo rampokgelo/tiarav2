@@ -30,7 +30,7 @@ section{
   @media #{$medium-and-down}{
     height: 50px;
     width: 140px;
-    background-size:60%;
+    background-size:63%;
   }
 }
 .nav-primary{
@@ -49,13 +49,12 @@ section{
     content: '';
     z-index: -1;
     top:0;
-    height: 70px;
+    height: 0;
     margin-top: -8px;
     width: 100%;
     position: absolute;
     display: block;
-    background-color: rgba(255,255,255,0);
-    @include transition(background-color .3s ease-in);
+    background-color: rgba(255,255,255,1);
   }
   .nav-collapse{
     display: block;
@@ -75,7 +74,7 @@ section{
       }
     }
     &:after{
-      background-color: rgba(255,255,255,1);
+      height: 70px;
     }
     ul{
       li{
@@ -170,9 +169,9 @@ section{
   }
 }
 .title{
-  text-align: center;
   font-size: 2.3em;
   position: relative;
+  padding-left: 20px;
   > span{
     display: inline-block;
     width: 15px;
@@ -181,6 +180,9 @@ section{
     margin-right: 10px;
     margin-left: -20px;
     vertical-align: top;
+  }
+  &.center{
+    text-align: center;
   }
 }
 .article-text{

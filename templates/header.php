@@ -36,18 +36,22 @@
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a class='dropdown-button' href='#' data-activates='dropdown1'>About Us</a>
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Vision &amp; Mission</a></li>
+                <li><a href="#!">From Our CEO</a></li>
+              </ul>
             </li>
             <li>
-              <a class='dropdown-button' href='#' data-activates='dropdown1'>Reliability Services</a>
-              <ul id='dropdown1' class='dropdown-content'>
+              <a class='dropdown-button' href='#' data-activates='dropdown2'>Reliability Services</a>
+              <ul id='dropdown2' class='dropdown-content'>
                 <li><a href="#!">Operating Deflection Shape (ODS) for Machinery Troubleshooting</a></li>
                 <li><a href="#!">Advanced Application of CSI 2130/2140 &amp; AMS Suite Software</a></li>
               </ul>
             </li>
             <li>
-              <a class='dropdown-button' href='#' data-activates='dropdown2'>Reliability  Technology</a>
-              <ul id='dropdown2' class='dropdown-content'>
+              <a class='dropdown-button' href='#' data-activates='dropdown3'>Reliability  Technology</a>
+              <ul id='dropdown3' class='dropdown-content'>
                 <li><a href="#!">one</a></li>
                 <li><a href="#!">Reliability Technology for Turbine</a></li>
                 <li><a href="#!">three</a></li>

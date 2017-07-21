@@ -34,7 +34,7 @@ include 'templates/header.php';
  </div>
  <section>
    <div class="container">
-     <h2 class="title"><span></span>About Us</h2>
+     <h2 class="title center"><span></span>About Us</h2>
      <div class="container-detail">
        <div class="text-center">
          <p class="article-text">
@@ -47,7 +47,7 @@ include 'templates/header.php';
  </section>
  <section class="grey lighten-4">
    <div class="container">
-     <h2 class="title"><span></span>What We Offer</h2>
+     <h2 class="title center"><span></span>What We Offer</h2>
      <div class="row">
        <div class="col s12 m6 l4">
          <div class="card medium">
@@ -115,6 +115,18 @@ include 'templates/header.php';
      </div>
    </div>
  </section>
+ <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+ <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+ <div id='map' style='width: 100%; height: 500px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmFtcG9rZ2VsbyIsImEiOiJjajVkbnlvcG0wbzFqMzNvNjgybWk2a3hwIn0.nBiU6cWxmYz3PjjIvrn75A';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/rampokgelo/cj5do371n0mgr2robfwt4x9xo'
+});
+map.scrollZoom.disable();
+</script>
+
 
 
  <?php

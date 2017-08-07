@@ -6,7 +6,7 @@
   border-radius: $button-radius;
   display: inline-block;
   height: $button-height;
-  line-height: $button-height;
+  line-height: $button-height - 2;
   padding: $button-padding;
   // text-transform: uppercase;
   vertical-align: middle;
@@ -69,7 +69,7 @@
   cursor: pointer;
 
   &:hover {
-    // background-color: $button-raised-background-hover;
+    background-color: $button-raised-background-hover;
     @extend .z-depth-1-half;
   }
 }
@@ -327,6 +327,8 @@ button.btn-floating {
 .btn-icon-xs {
   span {
     font-family: 'Lato', sans-serif;
+    position: relative;
+    top: -2px;
   }
   @media #{$medium-and-down}{
     border: none;
@@ -342,4 +344,19 @@ button.btn-floating {
       display: none;
     }
   }
+}
+.btn-link{
+  [classˆ="icon-"],[class*="icon-"]{
+    &.left-icon{
+      float: left;
+      line-height: 1.6;
+      margin-right: 8px;
+    }
+    &.right-icon{
+      float: right;
+      line-height: 1.6;
+      margin-left: 8px;
+    }
+  }
+
 }

@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".button-collapse").sideNav({
       menuWidth: 280, // Default is 300
-      edge: 'right', // Choose the horizontal origin
+      edge: 'left', // Choose the horizontal origin
       closeOnClick: true
   });
   $('.dropdown-button').dropdown({
@@ -10,11 +10,21 @@ $(document).ready(function() {
     constrainWidth: false, // Does not change width of dropdown to that of the activator
     hover: true, // Activate on hover
     gutter: 0, // Spacing from edge
-    belowOrigin: false, // Displays dropdown below the button
+    belowOrigin: true, // Displays dropdown below the button
     alignment: 'left', // Displays dropdown with edge aligned to the left of button
-    stopPropagation: false // Stops event propagation
+    stopPropagation: true // Stops event propagation
   });
-
+  $('.subdrop').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: ($('.dropdown-content').width()*3)/2.6 + 5, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        stopPropagation: true, // Stops event propagation
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      }
+    );
   $(window).on("scroll",function(){
   	var wn = $(window).scrollTop();
     if(wn > 80){

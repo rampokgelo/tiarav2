@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*="icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'tiaraicon' !important;
   speak: none;
@@ -23,7 +23,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-gplus:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-linkedin:before {
+  content: "\e913";
+}
+.icon-quote:before {
+  content: "\e914";
+}
+.icon-youtube:before {
+  content: "\e915";
+}
 .icon-arrow-next:before {
   content: "\e900";
 }

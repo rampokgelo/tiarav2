@@ -40,70 +40,10 @@ include 'templates/header.php';
          <p class="article-text">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </p>
-         <a href="#" class="waves-effect waves-light btn btn-flat btn-outline-primary">Read More</a>
+         <a href="#" class="waves-effect waves-light btn-large btn-outline-primary btn-flat">Read More</a>
        </div>
      </div>
    </div>
- </section>
- <section>
-   <div class="container">
-     <h2 class="title center"><span></span>Our Value</h2>
-   </div>
-   <div class="box-presentasion box-left">
-     <div class="box-img">
-       <img class="responsive-img" src="images/sample-asset.jpg" />
-     </div>
-     <div class="box-caption-wrapper">
-       <div class="caption">
-         <h4>Competency</h4>
-         <p>
-           We support our engineer to have relevant competence on doing our service which integrated with reliability and maintenance business process to give best solution for industry
-         </p>
-       </div>
-     </div>
-   </div>
-   <div class="box-presentasion box-right">
-     <div class="box-img">
-       <img class="responsive-img" src="images/sample-asset.jpg" />
-     </div>
-     <div class="box-caption-wrapper">
-       <div class="caption">
-         <h4>Business Process</h4>
-         <p>
-            We help implement best practice reliability management process and its framework maturity for process
-         </p>
-       </div>
-     </div>
-   </div>
-   <div class="box-presentasion box-left">
-     <div class="box-img">
-       <img class="responsive-img" src="images/sample-asset.jpg" />
-     </div>
-     <div class="box-caption-wrapper">
-       <div class="caption">
-         <h4>Technology</h4>
-         <p>
-           Tiara ensures the technology is used optimally in all process that support all asset reliability performance
-         </p>
-       </div>
-     </div>
-   </div>
- </section>
- <section>
-    <div class="img-wrap">
-      <img src="images/sample-asset-card.jpg" alt="" />
-    </div>
-    <div class="clip-wrap">
-      <img src="images/sample-asset-card.jpg" alt="demo-clip-css" class="element" width="150" height="150"></div>
-
-        <svg class="clip-svg" width="0" height="0">
-          <defs>
-            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox" >
-              <polygon points="0 1, 0 0, 1 0, 0.8 1" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
  </section>
  <section class="grey lighten-4">
    <div class="container">
@@ -175,7 +115,17 @@ include 'templates/header.php';
      </div>
    </div>
  </section>
-
+ <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+ <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+ <div id='map' style='width: 100%; height: 500px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmFtcG9rZ2VsbyIsImEiOiJjajVkbnlvcG0wbzFqMzNvNjgybWk2a3hwIn0.nBiU6cWxmYz3PjjIvrn75A';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/rampokgelo/cj5do371n0mgr2robfwt4x9xo'
+});
+map.scrollZoom.disable();
+</script>
 
 
 

@@ -7,6 +7,13 @@
   margin: 0 auto;
   width: 70%;
 }
+.container-lg{
+  margin: 0 auto;
+  width: 100%;
+  @media #{$extra-large-and-up} {
+    max-width: 1360px;
+  }
+}
 @media #{$medium-and-up} {
   .container {
     width: 85%;

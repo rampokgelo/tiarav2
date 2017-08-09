@@ -14,9 +14,15 @@ section{
   bottom: 0;
   margin: auto;
 }
+.inblock{
+  display: inline-block;
+}
 .overlay-base{
   background-color: rgba(0,0,0,.3);
   @extend .abs-center;
+}
+.bg-cover{
+  @include bg-cover;
 }
 .logogram {
   height: 55px;
@@ -187,6 +193,9 @@ section{
     margin-left: -20px;
     vertical-align: top;
   }
+  &.inverse{
+    color: #fff;
+  }
   &.center{
     text-align: center;
   }
@@ -209,13 +218,9 @@ section{
   }
   .box-img{
     width: 45%;
+    float: left;
   }
-  &.box-left{
-    .box-img{
-      float: left;
-    }
-  }
-  &.box-right{
+  &:nth-child(odd){
     .box-img{
       float: right;
     }
@@ -249,17 +254,147 @@ section{
     }
   }
 }
-.img-wrap {
-  position: relative;
-  -webkit-clip-path: polygon(0 14%, 95% 0, 99% 100%, 4% 93%);
-  clip-path: polygon(0 14%, 95% 0, 99% 100%, 4% 93%);
+.wrapper-offer{
+  overflow: hidden;
+  width: 100%;
+  .offer-clip-item{
+    display: block;
+    position: relative;
+    height: 320px;
+    float: left;
+    overflow: hidden;
+    &:hover .img-clip-wrap > img{
+
+    }
+    &:nth-child(1){
+      width: 35%;
+      .img-clip-wrap {
+        -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+      }
+      .caption-offer{
+        h3{
+          padding:15px 40px 15px 20px;
+        }
+      }
+    }
+    &:nth-child(2){
+      width: 40%;
+      margin: auto -5%;
+      .img-clip-wrap {
+        -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
+        clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
+      }
+      .caption-offer{
+        h3{
+          padding:15px 40px 15px 20px;
+        }
+      }
+    }
+    &:nth-child(3){
+      width: 35%;
+      .img-clip-wrap {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+      }
+      .caption-offer{
+        h3{
+          padding:15px 20px 15px 40px;
+        }
+      }
+    }
+  }
+  .caption-offer{
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &:before{
+      content: '';
+      height: 7px;
+      background-color: rgba(255,202,0,.7);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    h3{
+      max-width: 60%;
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 2rem;
+      background-color: rgba(3,50,151,.75);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    }
+  }
+  @media #{$medium-and-down}{
+    .offer-clip-item{
+      float: none;
+      height: 180px;
+      margin-bottom: $gutter-width / 2;
+      &:nth-child(1){
+        width: 100%;
+        .img-clip-wrap {
+          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+        }
+        .caption-offer{
+          h3{
+            padding:15px 40px 15px 20px;
+          }
+        }
+      }
+      &:nth-child(2){
+        width: 100%;
+        margin: auto auto ($gutter-width / 2);
+        .img-clip-wrap {
+          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        }
+        .caption-offer{
+          h3{
+            padding:15px 40px 15px 20px;
+          }
+        }
+      }
+      &:nth-child(3){
+        width: 100%;
+        .img-clip-wrap {
+          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+        }
+        .caption-offer{
+          h3{
+            padding:15px 40px 15px 20px;
+          }
+        }
+      }
+    }
+    .caption-offer{
+      h3{
+        max-width: 80%;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
-.element {
+.exp-slick-home{
+  padding: ($gutter-width / 2) 0;
+  margin-bottom: $gutter-width;
+  .slick-slide img {
+    display: inline-block;
+  }
+}
+
+/*.element {
+  position: relative;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
   clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
-  -webkit-clip-path: url("#clip-shape"); /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  -webkit-clip-path: url("#clip-shape"); required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path
   clip-path: url("#clip-shape");
-}
-.clip-wrap {
-  text-align: center;
-}
+}*/

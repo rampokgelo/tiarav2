@@ -62,6 +62,20 @@
   <li><a href="badges.html">Components</a></li>
   <li><a href="collapsible.html">Javascript</a></li>
   <li><a href="mobile.html">Mobile</a></li>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
 </ul>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

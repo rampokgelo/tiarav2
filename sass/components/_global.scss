@@ -47,6 +47,7 @@ a {
 // classic clearfix
 .clearfix {
   clear: both;
+  @include clearfix;
 }
 
 

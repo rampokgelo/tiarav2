@@ -20,7 +20,7 @@
               <a href="#" class="brand-logo"><span class="logogram"></span></a>
               <a href="#" data-activates="burgermenu" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a>
               <ul class="right">
-                <li><a href="collapsible.html"><i class="material-icons icon-search"></i></a></li>
+                <li><a href="#modal1" class="modal-trigger"><i class="material-icons icon-search"></i></a></li>
                 <li><a class="waves-effect waves-light btn btn-outline-inverse btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>member</span></a></li>
                 <!-- <li><span class="nav-collapse"><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a></span></li> -->
               </ul>

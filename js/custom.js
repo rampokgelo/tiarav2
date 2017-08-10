@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('ul.tabs').tabs({
     swipeable:true
   });
+  $('.parallax').parallax();
   $(".button-collapse").sideNav({
     menuWidth: 280, // Default is 300
     edge: 'left', // Choose the horizontal origin
@@ -42,6 +43,8 @@ $(document).ready(function() {
     dots: false,
     infinite: false,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '.prev-hero',

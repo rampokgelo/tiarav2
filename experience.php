@@ -32,7 +32,7 @@ include 'templates/header.php';
      <button type="button" class="waves-effect waves-light next-hero btn-box btn-default"><i class="icon-arrow-next"></i></button>
    </div>
  </div>
- <section>
+ <div class="section">
    <div class="container">
      <div class="row">
       <div class="col s12">
@@ -48,8 +48,12 @@ include 'templates/header.php';
     </div>
    </div>
 
- </section>
- <section class="grey lighten-4">
+ </div>
+ <div class="parallax-container">
+      <div class="parallax"><img src="images/parallax-img.jpg" ></div>
+ </div>
+ <section class="section grey lighten-4">
+
    <div class="container">
      <h2 class="title center"><span></span>What We Offer</h2>
      <div class="row">

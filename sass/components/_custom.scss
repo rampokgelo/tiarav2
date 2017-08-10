@@ -199,6 +199,9 @@ section{
   &.center{
     text-align: center;
   }
+  @media #{$medium-and-down}{
+    font-size: 2rem;
+  }
 }
 .article-text{
   font-size: 18px;
@@ -257,6 +260,7 @@ section{
 .wrapper-offer{
   overflow: hidden;
   width: 100%;
+  margin-bottom: $gutter-width;
   .offer-clip-item{
     display: block;
     position: relative;
@@ -335,13 +339,13 @@ section{
   @media #{$medium-and-down}{
     .offer-clip-item{
       float: none;
-      height: 180px;
+      height: 200px;
       margin-bottom: $gutter-width / 2;
       &:nth-child(1){
         width: 100%;
         .img-clip-wrap {
-          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
         .caption-offer{
           h3{
@@ -353,8 +357,8 @@ section{
         width: 100%;
         margin: auto auto ($gutter-width / 2);
         .img-clip-wrap {
-          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 18% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
         .caption-offer{
           h3{
@@ -365,8 +369,8 @@ section{
       &:nth-child(3){
         width: 100%;
         .img-clip-wrap {
-          -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
         .caption-offer{
           h3{
@@ -390,7 +394,18 @@ section{
     display: inline-block;
   }
 }
-
+.img-circle{
+  border-radius: 50%;
+}
+.img-profile{
+  @extend .img-circle;
+  display: inline-block;
+  padding: 15px;
+  width: 220px;
+  height: 220px;
+  border: solid 1px $secondary-color;
+  margin-bottom: $gutter-width;
+}
 /*.element {
   position: relative;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);

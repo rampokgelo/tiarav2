@@ -1,9 +1,23 @@
 .collapsible {
-  border-top: 1px solid $collapsible-border-color;
-  border-right: 1px solid $collapsible-border-color;
-  border-left: 1px solid $collapsible-border-color;
+  // border-top: 1px solid $collapsible-border-color;
+  // border-right: 1px solid $collapsible-border-color;
+  // border-left: 1px solid $collapsible-border-color;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  @extend .z-depth-1;
+  // @extend .z-depth-1;
+  >li{
+    position: relative;
+    &.active{
+      &:before{
+        content: '';
+        width: 1px;
+        height: calc(100% - 40px);
+        left: 15px;
+        top: 30px;
+        position: absolute;
+        background-color: $primary-color;
+      }
+    }
+  }
 }
 
 .collapsible-header {
@@ -12,9 +26,9 @@
   -webkit-tap-highlight-color: transparent;
   min-height: $collapsible-height;
   line-height: $collapsible-line-height;
-  padding: 0 1rem;
+  // padding: 0 1rem;
   background-color: $collapsible-header-color;
-  border-bottom: 1px solid $collapsible-border-color;
+  //border-top: 1px solid $collapsible-border-color;
 
   i {
     width: 2rem;
@@ -25,13 +39,43 @@
     text-align: center;
     margin-right: 1rem;
   }
+  >.collapsible-title{
+    font-size: 1.6rem;
+    padding-left: 40px;
+    margin: auto;
+  }
+  > .collapsible-caret{
+    margin-right: 0.6rem;
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    padding: 9px;
+    height: 30px;
+    border: solid 1px $primary-color;
+    vertical-align: middle;
+    @include transition(all .3s ease-in);
+    @include rotate(0deg);
+    @extend .img-circle;
+    i{
+      font-size: .8rem;
+      line-height: 1;
+      width: auto;
+      float: none;
+      margin-right: auto;
+    }
+  }
+  &.active{
+    >.collapsible-caret{
+      @include rotate(90deg);
+    }
+  }
 }
 
 .collapsible-body {
   display: none;
-  border-bottom: 1px solid $collapsible-border-color;
+  // border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 0 ($gutter-width / 2) ($gutter-width / 2) 2rem;
 }
 
 // sideNav collapsible styling

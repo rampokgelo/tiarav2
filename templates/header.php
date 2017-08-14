@@ -40,6 +40,9 @@
               <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="#!">Vision &amp; Mission</a></li>
                 <li><a href="#!">From Our CEO</a></li>
+                <li><a href="#!">Benefit</a></li>
+                <li><a href="#!">Our Resources</a></li>
+                <li><a href="#!">Contact Us</a></li>
               </ul>
             </li>
             <li>
@@ -79,7 +82,7 @@
               <a href="#">Experiences</a>
             </li>
             <li>
-              <a href="#">Truc</a>
+              <a href="#">TRUC</a>
             </li>
             <li>
               <a href="#">News &amp; Event</a>

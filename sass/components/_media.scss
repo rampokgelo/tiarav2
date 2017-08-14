@@ -1,0 +1,108 @@
+.media {
+  // Proper spacing between instances of .media
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-object {
+  display: block;
+
+  // Fix collapse in webkit from max-width: 100% and display: table-cell.
+  &.img-thumbnail {
+    max-width: none;
+  }
+}
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+// Reset margins on headings for tighter default spacing
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+// Media list variation
+//
+// Undo default ul/ol styles
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+.media-list-link{
+  border: solid 1px $gray-lighter;
+  margin-bottom: $gutter-width;
+  @extend .z-depth-1;
+  @include translate(0,0);
+  @include transition(all .3s ease-in);
+  .media-left{
+    padding-right: 0;
+  }
+  .media-body{
+    padding: ($gutter-width / 2) $gutter-width;
+  }
+  .media-thumb-spacing{
+    width: 260px;
+    min-height: 180px;
+  }
+  @media #{$medium-and-down}{
+    margin-bottom: $gutter-width / 2;
+
+    .media-left{
+      display: block;
+      padding-right: 0;
+    }
+    .media-body{
+      display: block;
+      width: auto;
+      padding: ($gutter-width / 2);
+      .media-heading{
+        font-size: 16px;
+      }
+    }
+    .media-thumb-spacing{
+      width: 100%;
+      min-height: 180px;
+    }
+  }
+  &:hover{
+    @include translate(0,-5px);
+    @extend .z-depth-2;
+  }
+}

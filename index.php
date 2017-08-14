@@ -151,24 +151,26 @@ include 'templates/header.php';
  <section class="bg-cover" style="background-image:url('images/bg-experiences-home.jpg');">
      <div class="container">
        <h2 class="title inverse center"><span></span>Experiences</h2>
-       <div class="exp-slick-home">
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
-         </div>
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
-         </div>
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
-         </div>
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
-         </div>
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
-         </div>
-         <div class="text-center">
-           <img src="images/sample-logo-inverse.png" />
+       <div class="slick-wrapper">
+         <div class="exp-slick-home">
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
+           <div class="text-center">
+             <img src="images/sample-logo-inverse.png" />
+           </div>
          </div>
        </div>
        <div class="text-center">

@@ -29,8 +29,14 @@
   }
 }
 @media #{$medium-and-down} {
+  .container {
+    width: 95%;
+  }
   .container-detail {
     width: 100%;
+    &.container-overlap{
+      margin-top: -20px;
+    }
   }
 }
 // @media #{$large-and-up} {

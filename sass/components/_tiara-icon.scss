@@ -23,6 +23,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-phone:before {
+  content: "\e919";
+}
+.icon-question:before {
+  content: "\e918";
+}
+.icon-mail:before {
+  content: "\e917";
+}
 .icon-gplus:before {
   content: "\e911";
 }

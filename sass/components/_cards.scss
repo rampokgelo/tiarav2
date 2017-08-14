@@ -1,47 +1,61 @@
-
-
 .card-panel {
-  transition: box-shadow .25s;
+  transition: box-shadow 0.25s;
   padding: $card-padding;
-  margin: $element-top-margin 0 $element-bottom-margin 0;
+  margin: $element-top-margin 0 $element-bottom-margin;
   border-radius: 0;
   @extend .z-depth-1;
   background-color: $card-bg-color;
 }
 
+.card-linkable {
+  display: block;
+  color: $primary-color-dark;
+}
+
 .card {
   position: relative;
-  margin: $element-top-margin 0 $element-bottom-margin 0;
+  margin: $element-top-margin 0 $element-bottom-margin;
   background-color: $card-bg-color;
-  transition: box-shadow .25s;
+  transition: box-shadow 0.25s;
   border-radius: 2px;
   border: solid 1px $gray-lighter;
-  // @extend .z-depth-1;
+  @include translate(0,0);
+  @include transition(all .3s ease-in);
+  @extend .z-depth-1;
 
+  &:hover {
+    @include translate(0,-5px);
+    @extend .z-depth-2;
+  }
 
   .card-title {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
+
     &.activator {
       cursor: pointer;
     }
   }
-
   // Card Sizes
-  &.small, &.medium, &.large {
+  &.large,
+  &.medium,
+  &.small {
     position: relative;
 
     .card-image {
       max-height: 60%;
       overflow: hidden;
     }
+
     .card-image + .card-content {
       max-height: 40%;
     }
+
     .card-content {
       max-height: 100%;
       overflow: hidden;
     }
+
     .card-action {
       position: absolute;
       bottom: 0;
@@ -52,13 +66,14 @@
 
   &.small {
     height: 300px;
-    h3{
-      &.card-title{
-        font-size:16px;
+
+    h3 {
+      &.card-title {
+        font-size: 16px;
         line-height: 26px;
         margin-top: 0;
-        @media #{$medium-and-down}{
-          font-size:14px;
+        @media #{$medium-and-down} {
+          font-size: 14px;
           line-height: 24px;
         }
       }
@@ -72,10 +87,11 @@
   &.large {
     height: 500px;
   }
-
   // Horizontal Cards
   &.horizontal {
-    &.small, &.medium, &.large {
+    &.large,
+    &.medium,
+    &.small {
       .card-image {
         height: 100%;
         max-height: none;
@@ -86,11 +102,11 @@
         }
       }
     }
-
     display: flex;
 
     .card-image {
       max-width: 50%;
+
       img {
         // border-radius: 2px 0 0 2px;
         max-width: 100%;
@@ -109,7 +125,6 @@
       }
     }
   }
-
   // Sticky Action Section
   &.sticky-action {
     .card-action {
@@ -122,12 +137,8 @@
     }
   }
 
-
-
-
   .card-image {
     position: relative;
-
     // Image background for content
     img {
       display: block;
@@ -153,11 +164,11 @@
   .card-content {
     padding: $card-padding;
     // border-radius: 0 0 2px 2px;
-
     p {
       margin: 0;
       color: inherit;
     }
+
     .card-title {
       display: block;
       line-height: 32px;
@@ -178,19 +189,19 @@
     background-color: inherit;
     // border-top: 1px solid rgba(160,160,160,.2);
     // padding: 16px $card-padding;
-
     a:not(.btn):not(.btn-large):not(.btn-floating) {
       color: $card-link-color;
       display: inline-block;
       // margin-right: $card-padding;
       padding: 16px ($card-padding + 10);
-      transition: color .3s ease;
+      transition: color 0.3s ease;
       text-transform: uppercase;
       background-color: $gray-base;
 
-      &:hover { color: $card-link-color-light; }
+      &:hover {
+        color: $card-link-color-light;
+      }
     }
-
   }
 
   .card-reveal {
@@ -210,4 +221,36 @@
       display: block;
     }
   }
+}
+.card-schedule{
+  .card-date{
+    background-color: $primary-color;
+    color: #fff;
+    position: relative;
+    height: 170px;
+    padding: $gutter-width / 2;
+    margin-bottom: $gutter-width / 2;
+    >h3{
+      margin:0 auto;
+    }
+    > .card-longterm{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: ($gutter-width / 2) $gutter-width;
+      color: $primary-color-dark;
+      background-color: #fff;
+      border-bottom: solid 3px $secondary-color;
+    }
+  }
+  @media #{$medium-and-down}{
+    .card-date{
+      height: 150px;
+      margin-bottom: $gutter-width / 4;
+      > .card-longterm{
+
+      }
+    }
+  }
+
 }

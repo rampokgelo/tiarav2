@@ -1,11 +1,11 @@
 .modal {
-  @extend .z-depth-4;
+  // @extend .z-depth-4;
 
   display: none;
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fafafa;
+  background-color: #fff;
   padding: 0;
   max-height: 70%;
   width: 55%;
@@ -16,7 +16,7 @@
   will-change: top, opacity;
 
   @media #{$medium-and-down} {
-   width: 80%;
+   width: 100%;
   }
 
   h1,h2,h3,h4 {
@@ -32,7 +32,7 @@
 
   .modal-footer {
     border-radius: 0 0 2px 2px;
-    background-color: #fafafa;
+    // background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%;
@@ -52,10 +52,10 @@
   right: 0;
   height: 125%;
   width: 100%;
-  background: #000;
+  background: #fff;
   display: none;
-
-  will-change: opacity;
+  opacity: 1 !important;
+  // will-change: opacity;
 }
 
 // Modal with fixed action footer

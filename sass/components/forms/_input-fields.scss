@@ -202,6 +202,13 @@ textarea.materialize-textarea {
       width: calc(100% - 3rem);
     }
   }
+  &.inverse{
+    color: #fff;
+    .prefix{
+      color: #fff;
+    }
+
+  }
 }
 
 

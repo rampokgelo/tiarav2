@@ -40,7 +40,7 @@ h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($
 
 // Text Styles
 em { font-style: italic; }
-strong { font-weight: 500; }
+//strong { font-weight: 500; }
 small { font-size: 75%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }
@@ -60,6 +60,9 @@ small { font-size: 75%; }
   @media only screen and (max-width: 360px) {
     font-size: 1.2rem;
   }
+}
+.text-muted{
+  color: $gray-light;
 }
 // Alignment
 .text-left           { text-align: left; }

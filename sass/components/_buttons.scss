@@ -275,7 +275,8 @@ button.btn-floating {
 }
 // Block button
 .btn-block {
-  display: block;
+  display: block !important;
+  width: 100%;
 }
 //VARIANTS
 .btn-default {
@@ -309,6 +310,14 @@ button.btn-floating {
 .btn-outline-primary {
   @include button-variant($primary-color, transparent);
   border: solid 1px $primary-color;
+}
+
+.btn-outline-secondary {
+  @include button-variant($secondary-color, transparent);
+  border: solid 1px $secondary-color;
+  &:hover,&:focus{
+    color: black;
+  }
 }
 
 .btn-outline-inverse {
@@ -358,5 +367,24 @@ button.btn-floating {
       margin-left: 8px;
     }
   }
+}
 
+.btn-circle{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border:solid 1px $gray-base;
+  padding-top: 5px;
+  @extend .img-circle;
+  >i{
+    font-size: 1.8rem;
+  }
+  &.btn-fb{
+    color: $fb-color;
+    border-color: $fb-color;
+  }
+  &.btn-tw{
+    color: $tw-color;
+    border-color: $tw-color;
+  }
 }

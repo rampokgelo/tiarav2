@@ -1,4 +1,8 @@
 <div id="modal1" class="modal">
+  <div class="modal-close">
+    <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="icon-close"></i></a>
+
+  </div>
     <div class="modal-content">
       <h4>Modal Header</h4>
       <p>A bunch of text</p>

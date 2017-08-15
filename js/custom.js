@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.modal').modal();
   $('.collapsible').collapsible();
   $('ul.tabs').tabs({
-    swipeable:true
+    // swipeable:true
   });
   $('.parallax').parallax();
   $(".button-collapse").sideNav({
@@ -173,4 +173,19 @@ $(document).ready(function() {
   //   offset: 'bottom-in-view'
   //   // offset: '100%'
   // });
+  $("#element").introLoader({
+    animation: {
+        name: 'doubleLoader',
+        options: {
+            exitFx:'fadeOut',
+            ease: "easeInOutCirc",
+            style: 'light',
+            delayBefore: 500,
+            exitTime: 300,
+            progbarTime: 700,
+            progbarDelayAfter: 400,
+            preventScroll: true
+        }
+    }
+});
 });

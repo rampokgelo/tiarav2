@@ -42,7 +42,7 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $primary-color: #033298 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 10%) !default;
 
 $secondary-color: color("amber", "base") !default;
 $info-color: color("light-blue", "lighten-4") !default;

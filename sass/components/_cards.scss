@@ -140,6 +140,7 @@
   .card-image {
     position: relative;
     // Image background for content
+    border-bottom: solid 1px $gray-lighter;
     img {
       display: block;
       // border-radius: 2px 2px 0 0;
@@ -219,6 +220,7 @@
     .card-title {
       cursor: pointer;
       display: block;
+      @include clearfix;
     }
   }
 }

@@ -78,11 +78,14 @@
   </ul>
 </ul>
 
+<div id="element" class="introLoading"></div>
+
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/bin/materialize.min.js"></script>
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="js/sticky.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.introLoader.pack.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 

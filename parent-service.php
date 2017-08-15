@@ -3,7 +3,7 @@ $title ="Service";
 include 'templates/header.php';
  ?>
  <div class="banner-hero">
-   <div class="banner-hero-item" style="background-image:url('images/bg-about-us.jpg')">
+   <div class="banner-hero-item" style="background-image:url('images/bg-service.jpg')">
      <div class="overlay-base"></div>
       <div class="caption-hero">
         <div class="container">

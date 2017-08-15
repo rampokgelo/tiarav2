@@ -40,7 +40,7 @@ include 'templates/header.php';
  </div>
  <section>
      <div class="container">
-       <h2 class="title"><span></span>Testimonial</h2>
+       <h2 class="title"><span></span>Testimonials</h2>
        <div class="slick-wrapper">
          <div class="ben-slick padd-slick">
            <div class="text-center">

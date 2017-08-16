@@ -14,13 +14,11 @@ include 'templates/header.php';
  </div>
  <div class="section">
    <div class="container">
-     <div class="row">
-        <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#serv">Reliability Services</a></li>
-          <li class="tab col s3"><a href="#tech">Reliability Technology</a></li>
-          <li class="tab col s3"><a href="#comp">Reliability Competency</a></li>
-        </ul>
-      </div>
+     <ul class="tabs">
+       <li class="tab"><a class="active" href="#serv">Reliability Services</a></li>
+       <li class="tab"><a href="#tech">Reliability Technology</a></li>
+       <li class="tab"><a href="#comp">Reliability Competency</a></li>
+     </ul>
   </div>
   <div id="serv">
     <div class="hide-xs">

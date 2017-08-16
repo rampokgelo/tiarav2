@@ -22,8 +22,15 @@
               <a href="#" data-activates="burgermenu" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a>
               <ul class="right">
                 <li><a href="#modalSearch" class="modal-trigger"><i class="material-icons icon-search"></i></a></li>
-                <li><a href="#modalLogin" class="modal-trigger waves-effect waves-light btn btn-outline-inverse btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>member</span></a></li>
-                <!-- <li><span class="nav-collapse"><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-burger-menu"></i></a></span></li> -->
+                <li>
+                  <a href="#" href='#' data-activates='dropprofile' class="dropdown-button waves-effect waves-light btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>My Profile</span>
+                  </a>
+                  <ul id='dropprofile' class='dropdown-content'>
+                    <li><a href="#!"><i class="icon-user"></i> My Profile</a></li>
+                    <li><a href="#!"><i class="icon-logout"></i>  Logout</a></li>
+                  </ul>
+                </li>
+
               </ul>
             </div>
           </div>

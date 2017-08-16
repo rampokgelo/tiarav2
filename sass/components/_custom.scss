@@ -29,6 +29,14 @@ section{
   bottom: 0;
   margin: auto;
 }
+.abs-vmiddle{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  @include translate(0,-50%);
+}
 .inblock{
   display: inline-block;
 }
@@ -173,14 +181,42 @@ section{
         font-weight: bold;
       }
     }
-    img{
+    >img{
       @extend .abs-center;
+    }
+    .media{
+      text-align: left;
+      >.media-left{
+        >img{
+          max-width: 200px;
+          border: solid 5px #fff;
+        }
+      }
     }
     @media #{$medium-and-down}{
       height: 450px;
       .caption-hero{
         h1,h2{
           font-size: 1.8em;
+        }
+        .media{
+          text-align: center;
+          >.media-left,
+          >.media-body{
+            display: block;
+          }
+          >.media-left{
+            img{
+              margin-bottom: $gutter-width / 2;
+              max-width: 120px;
+            }
+          }
+          >.media-body{
+            width: auto;
+            >p{
+              margin-bottom: 0;
+            }
+          }
         }
       }
     }
@@ -435,13 +471,15 @@ section{
 .list-service{
   li{
     margin-top: $gutter-width / 2;
+    border: solid 1px $gray-lighter;
+    @extend .z-depth-1;
   }
   .media-left{
     padding-right: 0;
   }
   .media-body{
     padding: $gutter-width / 2;
-    background-color: $gray-lighter;
+    // background-color: $gray-lighter;
   }
   .media-thumb-spacing{
     width: 150px;
@@ -550,6 +588,31 @@ section{
       }
     }
 
+  }
+}
+.img-file{
+  height: 150px;
+  padding-top: 40px;
+  text-align: center;
+  color: #fff;
+  > [classˆ="icon-"],
+  > [class*="icon-"]{
+    font-size: 3rem;
+  }
+  &.img-audio{
+    background-color: color("light-blue", "base");
+  }
+  &.img-image{
+    background-color: color("purple", "base");
+  }
+  &.img-rar{
+    background-color: color("red", "darken-4");
+  }
+  &.img-video{
+    background-color: color("green", "darken-2");
+  }
+  &.img-document{
+    background-color: color("blue", "darken-4");
   }
 }
 /*.element {

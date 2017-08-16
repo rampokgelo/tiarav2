@@ -120,6 +120,23 @@ textarea.materialize-textarea {
     opacity: 0;
     transition: .2s opacity ease-out, .2s color ease-out;
   }
+  &.main-search-form{
+    border-bottom: none;
+    height: auto;
+    font-size: 4rem;
+    &.valid,
+    &:focus.valid {
+      border-bottom: none;
+      box-shadow: none;
+    }
+    &:focus:not([readonly]) {
+      border-bottom: none;
+      box-shadow: none;
+    }
+    @media #{$medium-and-down}{
+      font-size: 2rem;
+    }
+  }
 }
 
 // Styling for input field wrapper

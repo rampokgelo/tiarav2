@@ -78,7 +78,7 @@
   </ul>
 </ul>
 
-<div id="element" class="introLoading"></div>
+
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/bin/materialize.min.js"></script>

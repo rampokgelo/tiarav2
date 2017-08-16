@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  $('.modal').modal();
+  $('.modal').modal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    startingTop: '0', // Starting top style attribute
+    endingTop: '0',
+    opacity: 1
+  });
   $('.collapsible').collapsible();
   $('ul.tabs').tabs({
     // swipeable:true

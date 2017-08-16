@@ -7,8 +7,9 @@
   right: 0;
   background-color: #fff;
   padding: 0;
-  max-height: 70%;
-  width: 55%;
+  // max-height: 70%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   overflow-y: auto;
 
@@ -22,20 +23,44 @@
   h1,h2,h3,h4 {
     margin-top: 0;
   }
-
+  .modal-header{
+    padding: 24px;
+    >.modal-close{
+      line-height: 1;
+      font-size: 3rem;
+      color: $gray-base;
+    }
+    @media #{$medium-and-down} {
+     padding:$gutter-width / 2;
+     >.modal-close{
+       font-size: 2rem;
+     }
+    }
+  }
   .modal-content {
     padding: 24px;
+    width: 60%;
+    margin: auto;
+    @media #{$medium-and-down} {
+       padding:$gutter-width / 2;
+       width: 100%;
+    }
   }
   .modal-close {
     cursor: pointer;
   }
 
   .modal-footer {
+    @media #{$medium-and-down} {
+       padding:$gutter-width / 2;
+       width: 100%;
+    }
+    margin: auto;
     border-radius: 0 0 2px 2px;
     // background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
-    width: 100%;
+    width: 60%;
     text-align: right;
 
     .btn, .btn-flat {

@@ -26,6 +26,12 @@
 .icon4x{
   font-size: 4rem;
 }
+.icon-lock:before {
+  content: "\e91a";
+}
+.icon-setting:before {
+  content: "\e91b";
+}
 .icon-document:before {
   content: "\e916";
 }

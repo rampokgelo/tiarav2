@@ -23,14 +23,14 @@
               <ul class="right">
                 <li><a href="#modalSearch" class="modal-trigger"><i class="material-icons icon-search"></i></a></li>
                 <li>
-                  <a href="#" href='#' data-activates='dropprofile' class="dropdown-button waves-effect waves-light btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>My Profile</span>
+                  <a href="#" data-activates='dropprofile' class="dropdown-button waves-effect waves-light btn-flat btn-icon-xs"><i class="material-icons icon-user left"></i> <span>My Profile</span>
                   </a>
                   <ul id='dropprofile' class='dropdown-content'>
                     <li><a href="#!"><i class="icon-user"></i> My Profile</a></li>
+                    <li><a href="#!"><i class="icon-setting"></i> Edit Account</a></li>
                     <li><a href="#!"><i class="icon-logout"></i>  Logout</a></li>
                   </ul>
                 </li>
-
               </ul>
             </div>
           </div>

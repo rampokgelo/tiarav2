@@ -22,33 +22,46 @@
     <a href="#" class="modal-action modal-close waves-effect waves-light"><i class="icon-close"></i></a>
   </div>
   <div class="modal-content">
-    <h3 class="title"><span></span>Member</h3>
-    <form>
-      <div class="input-field">
-        <input type="text" class="validate">
-        <label>User ID &sol; Email</label>
-      </div>
-      <div class="input-field">
-        <input type="password" class="validate">
-        <label>Password</label>
-      </div>
-      <br />
-      <div class="clearfix">
-        <a href="#modalForgot" class="waves-effect waves-light">Forgot Password ?</a>
-        <a href="#!" class="btn btn-large btn-outline-primary waves-effect waves-light btn-flat pull-right">Login</a>
-      </div>
-      <div class="forgot-pass">
-        <h3 class="title"><span></span>Forgot Password</h3>
+    <div class="wrapper-login">
+      <div class="loginform showup">
+        <h3 class="title"><span></span>Member</h3>
+        <br />
         <form>
           <div class="input-field">
             <input type="text" class="validate">
-            <label>Type Email</label>
+            <label>User ID &sol; Email</label>
           </div>
-          <a href="#!" class="btn btn-block btn-large btn-primary waves-effect waves-light btn-flat">Send</a>
+          <div class="input-field">
+            <input type="password" class="validate">
+            <label>Password</label>
+          </div>
+          <br />
+          <div class="text-right">
+            <button type="button" class="btn-flat waves-effect waves-light forgotshow">Forgot Password ?</button>
+            <a href="#" class="btn btn-outline-primary waves-effect waves-light btn-flat">Login</a>
+          </div>
         </form>
       </div>
 
-    </form>
+      <div class="forgot-pass">
+        <h3 class="title"><span></span>Forgot Password</h3>
+        <br />
+        <div class="text-center">
+          <i class="icon-mail text-muted icon4x"></i>
+        </div>
+        <form>
+          <div class="input-field">
+            <input type="email" class="validate">
+            <label>Type Email</label>
+          </div>
+          <br />
+          <div class="clearfix">
+            <a href="#!" class="btn btn-block btn-primary waves-effect waves-light btn-flat">Send</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </div>
   <!-- <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>

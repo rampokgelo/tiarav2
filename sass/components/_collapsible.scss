@@ -5,6 +5,7 @@
   margin: $element-top-margin 0 $element-bottom-margin 0;
   // @extend .z-depth-1;
   >li{
+    padding: 0 $sidenav-padding;
     position: relative;
     &.active{
       &:before{
@@ -43,6 +44,7 @@
     font-size: 1.6rem;
     padding-left: 40px;
     margin: auto;
+
   }
   > .collapsible-caret{
     margin-right: 0.6rem;
@@ -86,27 +88,89 @@
     border: none;
     box-shadow: none;
 
-    li { padding: 0; }
+    li {
+      padding: 0;
+      &.active{
+        &:before{
+          height: calc(100% - 31px);
+          top: 31px;
+          left: 25px;
+        }
+      }
+    }
+    &.collapsible-sub{
+      margin-left: 10px;
+      .collapsible-header{
+        height: auto;
+        line-height: 1.5;
+        padding: ($sidenav-padding / 1.5) $sidenav-padding ($sidenav-padding / 2) 0;
+      }
+      li {
+        padding: 0;
+        &.active{
+          &:before{
+            left: 10px;
+          }
+        }
+      }
+    }
+
   }
 
   .collapsible-header {
     background-color: transparent;
     border: none;
-    line-height: inherit;
-    height: inherit;
-    padding: 0 $sidenav-padding;
+    height: auto;
+    line-height: 1.5;
+    padding: ($sidenav-padding / 1.5) $sidenav-padding;
+    // line-height: inherit;
+    // height: inherit;
+    // padding: 0 $sidenav-padding;
 
-    &:hover { background-color: rgba(0,0,0,.05); }
+    &:hover {
+      //background-color: $gray-lighter;
+    }
     i { line-height: inherit; }
+    >.collapsible-title{
+      font-size: 14px;
+      padding-left: 30px;
+      margin: auto;
+      line-height: 24px;
+    }
+    > .collapsible-caret{
+      width: 20px;
+      padding: 4px;
+      height: 20px;
+      top: 12px;
+      i{
+        font-size: 10px;
+        line-height: 1;
+        width: auto;
+        float: none;
+        margin-right: auto;
+      }
+    }
   }
 
   .collapsible-body {
     border: 0;
-    background-color: $collapsible-header-color;
-
+    margin-left: 30px;
+    //background-color: $collapsible-header-color;
+    background-color: $gray-lighter;
     li a {
-      padding: 0 (7.5px + $sidenav-padding)
-               0 (15px + $sidenav-padding);
+      line-height: 1.5;
+      // padding: 0 (7.5px + $sidenav-padding)
+      //          0 (15px + $sidenav-padding);
+      padding: ($sidenav-padding / 1.5) ($sidenav-padding);
+    }
+    >.sub-menu-collapse{
+      >li{
+        a{
+          height: auto;
+          line-height: 1.5;
+          padding: $sidenav-padding $sidenav-padding $sidenav-padding 0;
+        }
+      }
     }
   }
 

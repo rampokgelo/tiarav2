@@ -11,6 +11,7 @@ section{
     display: none;
   }
 }
+
 .padd-ver-5{
   padding-top: $gutter-width / 2;
   padding-bottom: $gutter-width / 2;
@@ -37,6 +38,11 @@ section{
   margin: auto;
   @include translate(0,-50%);
 }
+.scrollable-y{
+  @extend .abs-center;
+  overflow-y: auto;
+  height: 100%;
+};
 .inblock{
   display: inline-block;
 }
@@ -613,6 +619,62 @@ section{
   }
   &.img-document{
     background-color: color("blue", "darken-4");
+  }
+}
+.wrapper-login{
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+}
+.loginform, .forgot-pass{
+  width: 100%;
+  position: absolute;
+  padding: $gutter-width / 4;
+  @include translate(-100%,0);
+  @include transition(all .3s);
+  &.showup{
+    @include translate(0,0);
+  }
+}
+.follow-sosmed{
+  @include clearfix;
+  line-height: 1.5 !important;
+  background-color: lighten($secondary-color, 5%);
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+
+  >small{
+    width: 30%;
+    float: left;
+    display: inline-block;
+    padding: $sidenav-padding;
+  }
+  >ul{
+    margin: auto;
+    float: right;
+    display: inline-block;
+    width: 70%;
+    padding: 8px 3px 3px 0;
+    li{
+      text-align: right;
+      display: inline-block;
+      line-height: 1;
+      float: right;
+      a{
+        padding: 5px;
+        display: inline-block;
+        line-height: 1;
+        i{
+          font-size: 1.5rem;
+          line-height: 1;
+          margin: auto;
+          height: auto;
+          width: auto;
+        }
+      }
+    }
   }
 }
 /*.element {

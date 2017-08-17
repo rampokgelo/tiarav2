@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
   $('.parallax').parallax();
   $(".button-collapse").sideNav({
-    menuWidth: 280, // Default is 300
+    //menuWidth: 280, // Default is 300
     edge: 'left', // Choose the horizontal origin
     closeOnClick: true
   });
@@ -178,6 +178,10 @@ $(document).ready(function() {
   //   offset: 'bottom-in-view'
   //   // offset: '100%'
   // });
+  $('.forgotshow').on('click tap', function(){
+    $('.loginform').removeClass('showup');
+    $('.forgot-pass').addClass('showup');
+  });
   $("#element").introLoader({
     animation: {
         name: 'doubleLoader',

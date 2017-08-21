@@ -5,7 +5,7 @@
   margin: $element-top-margin 0 $element-bottom-margin 0;
   // @extend .z-depth-1;
   >li{
-    padding: 0 $sidenav-padding;
+    //padding: 0 $sidenav-padding;
     position: relative;
     &.active{
       &:before{
@@ -28,6 +28,7 @@
   min-height: $collapsible-height;
   line-height: $collapsible-line-height;
   // padding: 0 1rem;
+  padding-bottom: $gutter-width / 2;
   background-color: $collapsible-header-color;
   //border-top: 1px solid $collapsible-border-color;
 
@@ -44,7 +45,10 @@
     font-size: 1.6rem;
     padding-left: 40px;
     margin: auto;
-
+    @media #{$medium-and-down}{
+      font-size: 1.4rem;
+      line-height: 1.8;
+    }
   }
   > .collapsible-caret{
     margin-right: 0.6rem;

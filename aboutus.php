@@ -152,7 +152,7 @@ include 'templates/header.php';
 
  </section>
 
- <section class="bg-cover" style="background-image:url('images/bg-contact-about.jpg');">
+ <section class="bg-cover" style="background-image:url('images/bg-contact-about.jpg'); overflow-x:hidden;">
      <div class="container">
        <h2 class="title center inverse"><span></span>Contact Us</h2>
        <div class="container-detail">

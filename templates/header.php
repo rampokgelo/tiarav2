@@ -39,6 +39,7 @@
             <li>
               <a class='dropdown-button' href='#' data-activates='dropdown1'>About Us</a>
               <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">About</a></li>
                 <li><a href="#!">Vision &amp; Mission</a></li>
                 <li><a href="#!">From Our CEO</a></li>
                 <li><a href="#!">Benefit</a></li>

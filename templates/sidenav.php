@@ -13,6 +13,7 @@
             </div>
             <div class="collapsible-body">
               <ul class="menu-collapse">
+                <li><a href="#!">About</a></li>
                 <li><a href="#!">Vision &amp; Mission</a></li>
                 <li><a href="#!">From Our CEO</a></li>
                 <li><a href="#!">Benefit</a></li>

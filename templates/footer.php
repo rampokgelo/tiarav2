@@ -26,7 +26,7 @@
           </li>
         </ul>
       </div>
-      <div class="col l3 s12 hide-on-small-only">
+      <div class="col l3 s12">
         <h6 class="amber-text">Menu</h6>
         <ul>
           <li><a class="waves-effect waves-light" href="#!">Home</a></li>

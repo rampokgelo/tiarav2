@@ -322,16 +322,17 @@ section{
   width: 100%;
   margin-bottom: $gutter-width;
   .offer-clip-item{
+    width: 33.333333%;
     display: block;
     position: relative;
-    height: 320px;
+    height: 300px;
     float: left;
     overflow: hidden;
     &:hover .img-clip-wrap > img{
 
     }
     &:nth-child(1){
-      width: 35%;
+      //width: 30%;
       .img-clip-wrap {
         -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
@@ -343,8 +344,8 @@ section{
       }
     }
     &:nth-child(2){
-      width: 40%;
-      margin: auto -5%;
+      //width: 30%;
+      // margin: auto -5%;
       .img-clip-wrap {
         -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
         clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
@@ -356,7 +357,7 @@ section{
       }
     }
     &:nth-child(3){
-      width: 35%;
+      // width: 35%;
       .img-clip-wrap {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
@@ -385,7 +386,7 @@ section{
       right: 0;
     }
     h3{
-      max-width: 60%;
+      max-width: 75%;
       position: relative;
       display: inline-block;
       margin: 0;
@@ -399,7 +400,7 @@ section{
   @media #{$medium-and-down}{
     .offer-clip-item{
       float: none;
-      height: 200px;
+      height: 220px;
       margin-bottom: $gutter-width / 2;
       &:nth-child(1){
         width: 100%;

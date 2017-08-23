@@ -8,7 +8,12 @@ $(document).ready(function() {
   $('.collapsible').collapsible();
   $('ul.tabs').tabs({
     // swipeable:true
+    onShow: function(tab) {
+      $('.ben-slick').slick('setPosition');
+      //$('.ben-slick').resize();
+    }
   });
+
   $('.parallax').parallax();
   $(".button-collapse").sideNav({
     //menuWidth: 280, // Default is 300
@@ -25,7 +30,7 @@ $(document).ready(function() {
     alignment: 'left', // Displays dropdown with edge aligned to the left of button
     stopPropagation: true // Stops event propagation
   });
-  
+
   $('.subdrop').dropdown({
     inDuration: 300,
     outDuration: 225,
@@ -50,7 +55,7 @@ $(document).ready(function() {
     infinite: false,
     speed: 300,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '.prev-hero',
@@ -179,23 +184,23 @@ $(document).ready(function() {
   //   offset: 'bottom-in-view'
   //   // offset: '100%'
   // });
-  $('.forgotshow').on('click tap', function(){
+  $('.forgotshow').on('click tap', function() {
     $('.loginform').removeClass('showup');
     $('.forgot-pass').addClass('showup');
   });
   $("#element").introLoader({
     animation: {
-        name: 'doubleLoader',
-        options: {
-            exitFx:'fadeOut',
-            ease: "easeInOutCirc",
-            style: 'light',
-            delayBefore: 500,
-            exitTime: 300,
-            progbarTime: 700,
-            progbarDelayAfter: 400,
-            preventScroll: true
-        }
+      name: 'doubleLoader',
+      options: {
+        exitFx: 'fadeOut',
+        ease: "easeInOutCirc",
+        style: 'light',
+        delayBefore: 500,
+        exitTime: 300,
+        progbarTime: 700,
+        progbarDelayAfter: 400,
+        preventScroll: true
+      }
     }
-});
+  });
 });

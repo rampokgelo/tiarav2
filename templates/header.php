@@ -13,7 +13,7 @@
     </head>
 
     <body>
-      <!-- <div id="element" class="introLoading"></div> -->
+      <div id="element" class="introLoading"></div>
       <div class="navbar-fixed">
         <nav class="nav-primary">
           <div class="nav-wrapper">
@@ -75,6 +75,24 @@
             <li>
               <a class='dropdown-button' href='#' data-activates='dropdown4'>Reliability Competency</a>
               <ul id='dropdown4' class='dropdown-content'>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!">Work Planning and Control</a></li>
+                <li><a href="#!">two</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
                 <li><a href="#!">Work Planning and Control</a></li>
                 <li><a href="#!">two</a></li>
                 <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>

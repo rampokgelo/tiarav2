@@ -89,6 +89,22 @@ include 'templates/header.php';
              </div>
            </div>
            <p class="card-sche-capt">
+             Condition Monitoring and Troubleshooting
+           </p>
+         </div>
+       </div>
+       <div class="col s12 l4">
+         <div class="card-schedule">
+           <div class="card-date">
+             <h3>27</h3>
+             <p>
+               April 2017
+             </p>
+             <div class="card-longterm">
+               4 Days
+             </div>
+           </div>
+           <p class="card-sche-capt">
              Advanced Application of CSI 2120/2130 and AMS Suite (RBM) for Condition Monitoring and Troubleshooting
            </p>
          </div>

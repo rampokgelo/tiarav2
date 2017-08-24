@@ -13,7 +13,6 @@
     </head>
 
     <body>
-      <div id="element" class="introLoading"></div>
       <div class="navbar-fixed">
         <nav class="nav-primary">
           <div class="nav-wrapper">

@@ -69,7 +69,7 @@ include 'sidenav.php';
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="js/sticky.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery.introLoader.pack.min.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 

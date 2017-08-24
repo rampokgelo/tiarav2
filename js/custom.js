@@ -188,19 +188,11 @@ $(document).ready(function() {
     $('.loginform').removeClass('showup');
     $('.forgot-pass').addClass('showup');
   });
-  $("#element").introLoader({
-    animation: {
-      name: 'doubleLoader',
-      options: {
-        exitFx: 'fadeOut',
-        ease: "easeInOutCirc",
-        style: 'light',
-        delayBefore: 500,
-        exitTime: 300,
-        progbarTime: 700,
-        progbarDelayAfter: 400,
-        preventScroll: true
-      }
-    }
+  $("#fakeloader").fakeLoader({
+    timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
+    zIndex: "999", //Default zIndex
+    spinner: "spinner6", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+    bgColor: "#033298", //Hex, RGB or RGBA colors
+    //imagePath: "yourPath/customizedImage.gif" //If you want can you insert your custom image
   });
 });

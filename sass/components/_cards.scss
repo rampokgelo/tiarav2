@@ -250,12 +250,17 @@
     height: 80px;
   }
   @media #{$medium-and-down}{
+  margin-bottom: $gutter-width;
     .card-date{
       height: 150px;
       margin-bottom: $gutter-width / 4;
       > .card-longterm{
 
       }
+    }
+    .card-sche-capt{
+      font-size: 85%;
+      height: auto;
     }
   }
 

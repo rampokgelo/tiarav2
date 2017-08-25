@@ -27,7 +27,7 @@ include 'templates/header-login.php';
        </div>
        <div class="col s12 l6">
          <form>
-           <div class="row">
+           <div class="row overhidden">
              <div class="input-field col s12 l8">
                <input id="first_name" type="text" class="validate">
                <label for="first_name">Search here...</label>

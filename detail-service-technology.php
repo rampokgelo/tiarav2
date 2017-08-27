@@ -164,9 +164,9 @@ include 'templates/header.php';
          <div class="text-center">
            <img src="images/sample-logo-color.png" />
          </div>
-         <div class="text-center">
+         <!-- <div class="text-center">
            <img src="images/sample-logo-color.png" />
-         </div>
+         </div> -->
        </div>
      </div>
    </div>

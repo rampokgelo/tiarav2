@@ -57,13 +57,13 @@ nav {
   }
   // Logo
   .brand-logo {
-    position: absolute;
+    //position: absolute;
     color: $navbar-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;
     padding: 0;
     white-space: nowrap;
-      margin-left: 0px;
+    margin-left: 0px;
     @include transition(all .3s ease-in);
     .logogram {
       margin: 4px auto 0;
@@ -74,7 +74,7 @@ nav {
       transform: translateX(-50%);
     }
     @media #{$medium-and-down} {
-      margin-left: 44px;
+      margin-left: 10px;
       // left: 50%;
       // transform: translateX(-50%);
       &.left,

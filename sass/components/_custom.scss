@@ -130,7 +130,7 @@ section{
       }
     }
     .brand-logo{
-      margin-left: 44px;
+      margin-left: 10px;
     }
     .button-collapse{
       display: block;
@@ -649,16 +649,16 @@ section{
   width: 100%;
 
   >small{
-    width: 30%;
+    width: 25%;
     float: left;
     display: inline-block;
-    padding: $sidenav-padding;
+    padding: $sidenav-padding 10px;
   }
   >ul{
     margin: auto;
     float: right;
     display: inline-block;
-    width: 70%;
+    width: 75%;
     padding: 8px 3px 3px 0;
     li{
       text-align: right;
@@ -678,6 +678,15 @@ section{
         }
       }
     }
+  }
+}
+.article-container{
+  img{
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  iframe{
+    width: 100% !important;
   }
 }
 /*.element {

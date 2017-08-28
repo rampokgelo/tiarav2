@@ -689,6 +689,19 @@ section{
     width: 100% !important;
   }
 }
+.maintenance{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  @media #{$medium-and-down}{
+    h1{
+      font-size: 2rem;
+    }
+    img{
+      max-width:200px;
+    }
+  }
+}
 /*.element {
   position: relative;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);

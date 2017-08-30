@@ -22,7 +22,7 @@ include 'templates/header.php';
        <p>
          <img class="responsive-img" src="images/sample-asset.jpg"/>
        </p>
-       <a href="#" class="waves-effect waves-light btn btn-flat btn-outline-primary">Download Brochure</a>
+       <a href="#" class="waves-effect waves-light btn btn-flat btn-outline-primary">Download File</a>
        <div class="divider-share"></div>
        <div class="share-sosmed">
          <span>Share this</span>

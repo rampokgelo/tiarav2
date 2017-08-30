@@ -696,13 +696,14 @@ section{
   width: 90%;
   margin: auto;
   text-align: center;
+  img{
+    max-width:200px;
+  }
   @media #{$medium-and-down}{
     h1{
       font-size: 2rem;
     }
-    img{
-      max-width:200px;
-    }
+
   }
 }
 /*.element {

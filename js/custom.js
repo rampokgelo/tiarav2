@@ -53,9 +53,9 @@ $(document).ready(function() {
   $('.banner-slide').slick({
     dots: false,
     infinite: false,
-    speed: 300,
+    speed: 800,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2500,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '.prev-hero',

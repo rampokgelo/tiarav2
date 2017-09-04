@@ -145,7 +145,8 @@ section{
 .nav-secondary{
   width: 100%;
   z-index: 9;
-  position: absolute;
+  position: fixed;
+  text-align: center;
   .container > ul{
     background-color: rgba(3,50,152,.5);
     border-radius: 5px;

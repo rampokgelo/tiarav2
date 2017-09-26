@@ -44,7 +44,7 @@
 
     .card-image {
       max-height: 60%;
-      // overflow: hidden;
+      overflow: hidden;
     }
 
     .card-image + .card-content {
@@ -72,10 +72,10 @@
         font-size: 16px;
         line-height: 26px;
         margin-top: 0;
-        @media #{$medium-and-down} {
-          font-size: 14px;
-          line-height: 24px;
-        }
+        // @media #{$medium-and-down} {
+        //   font-size: 15px;
+        //   line-height: 24px;
+        // }
       }
     }
   }

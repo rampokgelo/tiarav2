@@ -375,6 +375,7 @@ button.btn-floating {
   display: inline-block;
   border:solid 1px $gray-base;
   padding-top: 5px;
+  text-align: center;
   @extend .img-circle;
   >i{
     font-size: 1.8rem;

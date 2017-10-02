@@ -21,9 +21,10 @@ include 'templates/header.php';
      </div>
    </div>
    <div class="container-detail">
-     <ul class="collapsible" data-collapsible="accordion">
+     <ul class="collapsible" >
+       <!-- data-collapsible="accordion" -->
        <li>
-         <div class="collapsible-header active">
+         <div class="collapsible-header">
            <span class="collapsible-caret"><i class="icon-chevron-next"></i></span>
            <h3 class="collapsible-title">Reliability Service 1</h3>
          </div>

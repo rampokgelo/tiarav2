@@ -15,13 +15,17 @@ include 'templates/header.php';
  </div>
  <div class="container">
    <div class="container-detail container-overlap">
-     <div class="text-center">
+     <div class="article-container">
        <p class="article-text">
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
        </p>
        <p>
          <img class="responsive-img" src="images/sample-asset.jpg"/>
        </p>
+       <ul>
+      	<li>Develop RBD (Reliability Block Diagram)</li>
+      	<li>Tools: Weibull, Blocksim, Maros, Meridium</li>
+      </ul>
        <a href="#" class="waves-effect waves-light btn btn-flat btn-outline-primary">Download File</a>
        <div class="divider-share"></div>
        <div class="share-sosmed">

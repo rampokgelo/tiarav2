@@ -692,6 +692,13 @@ section{
   p{
     font-size: 17px;
   }
+  ul{
+    list-style: initial;
+    padding-left: $gutter-width / 1.4;
+    li{
+      list-style: initial;
+    }
+  }
 }
 .maintenance{
   width: 90%;

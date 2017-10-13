@@ -146,7 +146,7 @@
               <a href="#">TRUC</a>
             </li>
             <li>
-              <a href="#">Reliability Article</a>
+              <a href="#">Reliability Articles</a>
             </li>
           </ul>
 

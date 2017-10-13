@@ -21,6 +21,9 @@ include 'templates/header.php';
          </div>
          <div class="media-body media-middle">
            <h5 class="media-heading">The Effect Of Switching Surge For Stator Winding Insulation Condition On Air-cooled Generators</h5>
+           <div class="amber-text">
+             <strong>Switching Surge</strong>
+           </div>
            <small class="text-muted">12 Juli 2017</small>
          </div>
        </div>
